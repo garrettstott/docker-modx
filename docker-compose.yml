@@ -1,0 +1,14 @@
+---
+version: '2'
+
+services: 
+  app:
+    build: app
+    restart: always
+
+  proxy:
+    build: proxy
+    ports: 
+      - '80:80'
+    restart: always
+
